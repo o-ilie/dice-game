@@ -2,8 +2,6 @@ var diceOne  = document.getElementById('dice1');
 var diceTwo = document.getElementById('dice2');
 var roll  = document.getElementById('roll');
 
-
-
 function rollDice() {
 
 var randomDiceOne = Math.floor((Math.random() * 6) + 1);
