@@ -2,7 +2,7 @@ var diceOne  = document.getElementById('dice1');
 var diceTwo = document.getElementById('dice2');
 var roll  = document.getElementById('roll');
 
-roll.onclick = function () {rollDice();};
+roll.onclick = function () {rollDice();}
 
 function rollDice() {
 
