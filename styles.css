@@ -19,13 +19,16 @@ h2 {
 }
 
 button {
+position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #51CB20;
   border: none;
   color: white;
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 26px;
 }
 
 .ex1 {
@@ -40,13 +43,6 @@ button {
   perspective: 800px;
   perspective-origin: 40% 30%;
 }
-
-.roll-button {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 
 .container1, .container2 {
   position: relative;
