@@ -2,6 +2,8 @@ var diceOne  = document.getElementById('dice1');
 var diceTwo = document.getElementById('dice2');
 var roll  = document.getElementById('roll');
 
+roll.onclick = function () {rollDice();};
+
 function rollDice() {
 
 var randomDiceOne = Math.floor((Math.random() * 6) + 1);
@@ -32,5 +34,5 @@ if(randomDiceOne > randomDiceTwo) {
 	}
 }
 
-roll.onclick = function () {rollDice();};
+
 
