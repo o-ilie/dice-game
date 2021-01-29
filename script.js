@@ -3,6 +3,8 @@ var diceTwo = document.getElementById('dice2');
 var roll  = document.getElementById('roll');
 
 
+roll.onclick   = function () {rollDice();};
+
 function rollDice() {
 
 var randomDiceOne = Math.floor((Math.random() * 6) + 1);
@@ -21,9 +23,9 @@ var randomDiceOne = Math.floor((Math.random() * 6) + 1);
       diceTwo.classList.add('show-' + j);
     }
   }
-  console.log(randomDiceOne);
-console.log(randomDiceTwo);
-roll.onclick = function () {rollDice();};
+}
+  console.log(randomDiceOne + ' ' + randomDiceTwo);
+
 if(randomDiceOne > randomDiceTwo) {
 		document.querySelector("h1").innerHTML = "🚩Player 1 Wins!";
 	} else if (randomDiceTwo > randomDiceOne) {
