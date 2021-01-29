@@ -2,7 +2,7 @@ var diceOne  = document.getElementById('dice1');
 var diceTwo = document.getElementById('dice2');
 var roll  = document.getElementById('roll');
 
-
+roll.onclick = function () {rollDice();};
 function rollDice() {
 
 var randomDiceOne = Math.floor((Math.random() * 6) + 1);
@@ -23,8 +23,6 @@ var randomDiceOne = Math.floor((Math.random() * 6) + 1);
   }
   console.log(randomDiceOne);
 console.log(randomDiceTwo);
-	
-roll.onclick = function () {rollDice();};
 	
 if(randomDiceOne > randomDiceTwo) {
 		document.querySelector("h1").innerHTML = "🚩Player 1 Wins!"
