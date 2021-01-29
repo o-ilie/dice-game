@@ -3,7 +3,6 @@ var diceTwo = document.getElementById('dice2');
 var roll  = document.getElementById('roll');
 
 
-roll.onclick   = function () {rollDice();};
 
 function rollDice() {
 
@@ -23,8 +22,8 @@ var randomDiceOne = Math.floor((Math.random() * 6) + 1);
       diceTwo.classList.add('show-' + j);
     }
   }
-}
-  console.log(randomDiceOne + ' ' + randomDiceTwo);
+  console.log(randomDiceOne);
+console.log(randomDiceTwo);
 
 if(randomDiceOne > randomDiceTwo) {
 		document.querySelector("h1").innerHTML = "🚩Player 1 Wins!";
@@ -32,6 +31,8 @@ if(randomDiceOne > randomDiceTwo) {
 		document.querySelector("h1").innerHTML = "Player 2 Wins!🚩"
 	} else {
 		document.querySelector("h1").innerHTML = "Draw!";
-	}	 
+	}
 }
+
+roll.onclick = function () {rollDice();};
 
